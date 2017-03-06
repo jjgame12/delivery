@@ -28,5 +28,15 @@ error:src refspec master does not match any
     git commit -m 'first commit'
     git push origin master
 
+3.if的使用
+int main()
+{
+    int i = 3;
+    if(i > 2) cout<<"1"<<endl;//此时输出1,因为先执行的这个判断，成立就不管后面
+    else if(i > 0) cout<<"2"<<endl;
+    else cout<<"3"<<endl;//前面所有判断不成立时执行该操作，并不是每个判断条件都是互斥处理对待分析的
+
+}
+
 
 
