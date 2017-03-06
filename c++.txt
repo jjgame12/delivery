@@ -1,0 +1,32 @@
+C++中哪些头文件仍需加.h后缀 ?
+如果新式编译器不用
+例如
+C语言的 
+#include<stdlib.h>
+
+改成C++的
+#include<cstdlib>
+
+前缀C表明来自C标准库
+
+当然还有自己写的添加的头文件
+
+2.
+error:src refspec master does not match any
+这个问题，我之前也遇到过，这次又遇到了只是时间间隔比较长了，为了防止以后再遇到类似问题，还是把这个方法简单记录在此。
+
+    问题产生
+
+    原因分析
+
+    引起该错误的原因是，目录中没有文件，空目录是不能提交上去的
+
+    解决方法
+
+    touch README
+    git add README 
+    git commit -m 'first commit'
+    git push origin master
+
+
+
